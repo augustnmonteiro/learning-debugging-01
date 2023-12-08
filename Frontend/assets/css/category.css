@@ -1,0 +1,235 @@
+:root {
+    --color-1: #333C4B;
+    --color-2: #D4A056;
+    --color-3: #4A4C5C;
+    --color-4: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--color-4);
+}
+
+#container {
+    background-color: var(--color-3);
+    width: 100vw;
+    height: 100vh;
+}
+
+a {
+    color: var(--color-4);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-4);
+    text-decoration: none;
+}
+
+#header {
+    height: 80px;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header h1 {
+    margin: 15px 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#searchCategory {
+    width: 150px;
+    height: 40px;
+    color: #101010;
+    margin: 10px 15px;
+    border-radius: 5px;
+    background-color: #ddd8d8;
+    border-style: none;
+    padding: 2px 4px;
+
+}
+
+#searchResults {
+    background-color: #333c4b;
+    width: 148px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: none;
+    padding-left: 5px;
+    position: absolute;
+    z-index: 9999;
+}
+
+#searchResults span {
+    width: 35px;
+    padding: 3.5px;
+    border-radius: 5px;
+    margin-right: 100px;
+}
+
+#searchResults p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#closeButton {
+    width: 13px;
+    margin-left: 140px;
+    margin-bottom: 5px;
+    padding: 1px;
+    background-color: #535252;
+    cursor: pointer;
+    color: red;
+}
+
+
+#toggleButtonSearch {
+    width: 110px;
+    height: 40px;
+    margin-bottom: 3px;
+    margin-right: 50px;
+    background-color: var(--color-2);
+    color: var(--color-4);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#adminData {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#formCategory {
+    width: 500px;
+    height: 450px;
+    margin: 15px;
+    padding: 15px;
+    background-color: var(--color-1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 5px 2px #1A1A1A;
+}
+
+#insertCategory {
+    width: 200px;
+    padding: 3px;
+    border: 1px solid rgb(253, 253, 9);
+    border-radius: 5px;
+    background-color: #ddd8d8;
+    border-style: none;
+}
+
+#createForm button {
+    width: 130px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: var(--color-2);
+    color: var(--color-4);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#formCategory p {
+    margin-top: 10px;
+    color: var(--color-4);
+    font-family: sans-serif;
+}
+
+#formUpdate button {
+    width: 110px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: var(--color-2);
+    color: var(--color-4);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#categoryID {
+    width: 60px;
+    height: 25px;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #ddd8d8;
+    border-style: none;
+}
+
+#createForm {
+    width: 100%;
+    height: 225px;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#formUpdate {
+    width: 100%;
+    height: 225px;
+    align-items: center;
+    margin-left: 50px;
+}
+
+#categoryName {
+    width: 150px;
+    height: 30px;
+    margin-top: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #ddd8d8;
+    border-style: none;
+}
+#selectID {
+    background-color: #333C4B;
+    color: #fff;
+}
+#categoryList {
+    width: 500px;
+    max-height: 450px;
+    overflow-y: auto;
+    margin: 15px 50px;
+    padding: 15px;
+    background-color: var(--color-1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 5px 2px #1A1A1A;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+tr {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-family: sans-serif;
+    color: var(--color-4);
+}
+
+td {
+    margin: 0px 0px 0px 15px;
+}
+
+td button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: var(--color-2);
+    color: var(--color-4);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

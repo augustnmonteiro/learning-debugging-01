@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../assets/css/category.css">
+    <title>Category</title>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <h1><a href="../../../index.html">Category</a></h1>
+            <div>
+                <input type="search" id="searchCategory" placeholder="Search Category"/>
+                <button id="toggleButtonSearch" class="btn btn-dark">Search</button>
+                <div id="searchResults">
+                    
+                </div>
+            </div>
+        </header>
+        
+        <div id="adminData">
+            <div id="formCategory">
+                <div id="createForm">
+                    <input type="text" id="insertCategory" class="form-control" placeholder="Insert Category" />
+                    <button id="toggleFormCategory">Insert</button><br>
+                    <p>Create a new category.</p>
+                    <p id="errorDisplay" style="color: red; display: none;">Error submitting form</p>
+                </div>
+
+                <div id="formUpdate">
+                    <select id="selectID"  class="form-control" style="margin-top: 5px; width: 150px;">
+                        <option>Category</option>
+                    </select>
+                    <input type="text" id="categoryName" class="form-control" placeholder="New name"/>
+                    <button id="toggleFormUpdate">Update</button><br>
+                    <p>Enter the id and a new name <br>to change the category.<p></p>
+                </div>
+
+            </div>
+    
+            <div id="categoryList">
+                <div id="list">
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="../js/categoryApp.js"></script>
+</body>
+</html>
